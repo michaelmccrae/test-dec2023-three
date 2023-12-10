@@ -6,7 +6,7 @@ const MicVerOne = () => {
 
 
 
-const addAudioElement = (blob) => {
+const addAudioElement = (blob: Blob) => {
   const url = URL.createObjectURL(blob);
   const audio = document.createElement("audio");
   audio.src = url;
